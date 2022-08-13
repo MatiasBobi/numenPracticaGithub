@@ -1,0 +1,387 @@
+///VARIABLES PROPIAS///
+
+
+///VARIABLES DE BOOTSTRAP///
+
+
+$hoverlinks: rgb(19, 235, 235);
+$colorprincipal: rgb(231, 231, 54);
+
+header {
+    padding: 0 !important;
+
+    .navbar__index {
+        background: rgb(0, 0, 0);
+
+        a {
+            color: white;
+        }
+
+        // Hover de los A link del navbar
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+            color: $hoverlinks;
+        }
+
+        .hover-underline-animation:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $hoverlinks;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom;
+        }
+
+        a:hover {
+            color: $hoverlinks;
+        }
+
+        // Fin del hover de los a Links
+
+        .logoHeader {
+            font-size: 30px;
+            font-weight: bold;
+            color: $colorprincipal;
+            margin: 50px 50px;
+        }
+
+        .responsiveMenu_navegacionText {
+            color: rgb(255, 255, 255);
+        }
+
+        .productos__submenu {
+            background-color: #000;
+        }
+
+        .productos__submenu a:hover {
+            background-color: #000;
+        }
+    }
+
+}
+
+.fondomain {
+    background-image: url(../media/Fondoindex.jpg);
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 71px);
+    position: relative;
+    z-index: 1;
+
+}
+
+.fondomain:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    z-index: -100;
+}
+
+
+main {
+    padding: 0 !important;
+
+    //Estilo del banner //
+    .presentacion li {
+        list-style: none;
+        margin-bottom: 50px;
+
+        .verproductos__index {
+            color: rgb(15, 15, 15);
+            padding: 21px 60px;
+            border-radius: 50px;
+            background-color: $colorprincipal;
+            text-decoration: none;
+            text-align: center;
+
+            .texto__verproductos {
+                margin-right: 5px;
+            }
+
+        }
+
+
+
+        .underline__irA {
+            display: inline-block;
+            position: relative;
+            color: #000000;
+        }
+
+        .underline__irA:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #000000;
+
+            transition: transform 0.25s ease-out;
+        }
+
+        .underline__irA:hover:after {
+            transform: scaleX(0.6);
+            transform-origin: bottom;
+        }
+
+        p {
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 100px;
+            color: $colorprincipal;
+        }
+    }
+
+
+    .tracking-in-contract {
+        -webkit-animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+    // Fin de estilo del banner //
+
+    // Estilo descripcion de la empresa //
+    .descripcion__empresa {
+
+        width: 100%;
+        background-color: $colorprincipal;
+        padding: 30px 0px;
+
+        .container__descripcion__empresa {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .parrafo__descripcion {
+
+                .imagen__desc_emp {
+                    width: 128px;
+                    margin-bottom: 50px;
+                }
+
+                width: 50%;
+                text-align: center;
+            }
+
+            .video__descrpcion__empresa {
+                height: 320px;
+                border: black solid 10px;
+                border-radius: 20px;
+                justify-content: spac;
+            }
+
+            .tracking-in-expand {
+                -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            }
+
+        }
+
+    }
+
+    // Fin de estilo descripcion de la empresa //
+
+    //Inicio estilo de empresas asociadas // 
+
+    .tipoProductos {
+        width: 100%;
+        padding: 50px 0px;
+        background-color: rgb(211, 206, 206);
+
+        .container_tipoProductos {
+            display: grid;
+            width: 90%;
+            height: 100vh;
+            margin: 0 auto;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            "item1 item1 item1 item2"
+            "item1 item1 item1 item2"
+            "item3 item3 item3 item2";
+            gap: 40px 0px;
+        }
+        .tipo__productos{
+            grid-area: item1;
+        }
+        .metodo__envio{
+            grid-area: item2;
+            background-color: black;
+        }
+        .metodosDePago{
+            grid-area: item3;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            width: 90%;
+            margin: 0 auto;
+            .iconoImagen{
+                width: 64px;
+            }
+            .container__metodosDePago{
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column wrap;
+                .imagen__metodosDePago{
+                    margin: 0px 30px;
+                }
+                h3{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .tipo__productos{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-flow: row wrap;
+            .tipoProductos__item{
+                background-color: rgb(255, 255, 255);
+                border: 2px solid black;
+                border-radius: 30px;
+                min-width: 250px;
+                min-height: 200px;
+                text-align: center;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+                .imagenTipoProductos{
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+
+    }
+}
+
+/**
+ * ----------------------------------------
+ * Animaciones
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-8-6 17:1:17
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Inicio de estilos segun el tamaño */
+
+@media screen and (max-width: 732px) {
+
+    .navbar__index li {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+
+        a {
+            padding: 20px;
+        }
+
+        .productos__submenu {
+            background-color: #333c44;
+            color: white;
+        }
+    }
+
+    .fondomain {
+        height: 100vh;
+    }
+}
+
+/* fin de estilos segun el tamaño */

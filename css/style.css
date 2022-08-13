@@ -1,0 +1,307 @@
+@charset "UTF-8";
+header {
+  padding: 0 !important;
+}
+header .navbar__index {
+  background: rgb(0, 0, 0);
+}
+header .navbar__index a {
+  color: white;
+}
+header .navbar__index .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: rgb(19, 235, 235);
+}
+header .navbar__index .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(19, 235, 235);
+  transition: transform 0.25s ease-out;
+}
+header .navbar__index .hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+header .navbar__index a:hover {
+  color: rgb(19, 235, 235);
+}
+header .navbar__index .logoHeader {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(231, 231, 54);
+  margin: 50px 50px;
+}
+header .navbar__index .responsiveMenu_navegacionText {
+  color: rgb(255, 255, 255);
+}
+header .navbar__index .productos__submenu {
+  background-color: #000;
+}
+header .navbar__index .productos__submenu a:hover {
+  background-color: #000;
+}
+
+.fondomain {
+  background-image: url(../media/Fondoindex.jpg);
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 71px);
+  position: relative;
+  z-index: 1;
+}
+
+.fondomain:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  z-index: -100;
+}
+
+main {
+  padding: 0 !important;
+}
+main .presentacion li {
+  list-style: none;
+  margin-bottom: 50px;
+}
+main .presentacion li .verproductos__index {
+  color: rgb(15, 15, 15);
+  padding: 21px 60px;
+  border-radius: 50px;
+  background-color: rgb(231, 231, 54);
+  text-decoration: none;
+  text-align: center;
+}
+main .presentacion li .verproductos__index .texto__verproductos {
+  margin-right: 5px;
+}
+main .presentacion li .underline__irA {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+main .presentacion li .underline__irA:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transition: transform 0.25s ease-out;
+}
+main .presentacion li .underline__irA:hover:after {
+  transform: scaleX(0.6);
+  transform-origin: bottom;
+}
+main .presentacion li p {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+main .presentacion li h1 {
+  font-size: 100px;
+  color: rgb(231, 231, 54);
+}
+main .tracking-in-contract {
+  -webkit-animation: tracking-in-contract 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+main .descripcion__empresa {
+  width: 100%;
+  background-color: rgb(231, 231, 54);
+  padding: 30px 0px;
+}
+main .descripcion__empresa .container__descripcion__empresa {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .descripcion__empresa .container__descripcion__empresa .parrafo__descripcion {
+  width: 50%;
+  text-align: center;
+}
+main .descripcion__empresa .container__descripcion__empresa .parrafo__descripcion .imagen__desc_emp {
+  width: 128px;
+  margin-bottom: 50px;
+}
+main .descripcion__empresa .container__descripcion__empresa .video__descrpcion__empresa {
+  height: 320px;
+  border: black solid 10px;
+  border-radius: 20px;
+  justify-content: spac;
+}
+main .descripcion__empresa .container__descripcion__empresa .tracking-in-expand {
+  -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+main .tipoProductos {
+  width: 100%;
+  padding: 50px 0px;
+  background-color: rgb(211, 206, 206);
+}
+main .tipoProductos .container_tipoProductos {
+  display: grid;
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "item1 item1 item1 item2" "item1 item1 item1 item2" "item3 item3 item3 item2";
+  gap: 40px 0px;
+}
+main .tipoProductos .tipo__productos {
+  grid-area: item1;
+}
+main .tipoProductos .metodo__envio {
+  grid-area: item2;
+  background-color: black;
+}
+main .tipoProductos .metodosDePago {
+  grid-area: item3;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  margin: 0 auto;
+}
+main .tipoProductos .metodosDePago .iconoImagen {
+  width: 64px;
+}
+main .tipoProductos .metodosDePago .container__metodosDePago {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+main .tipoProductos .metodosDePago .container__metodosDePago .imagen__metodosDePago {
+  margin: 0px 30px;
+}
+main .tipoProductos .metodosDePago .container__metodosDePago h3 {
+  margin-bottom: 30px;
+}
+main .tipoProductos .tipo__productos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+}
+main .tipoProductos .tipo__productos .tipoProductos__item {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  border-radius: 30px;
+  min-width: 250px;
+  min-height: 200px;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+main .tipoProductos .tipo__productos .tipoProductos__item .imagenTipoProductos {
+  width: 64px;
+  height: 64px;
+}
+
+/**
+ * ----------------------------------------
+ * Animaciones
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-8-6 17:1:17
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Inicio de estilos segun el tamaño */
+@media screen and (max-width: 732px) {
+  .navbar__index li {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .navbar__index li a {
+    padding: 20px;
+  }
+  .navbar__index li .productos__submenu {
+    background-color: #333c44;
+    color: white;
+  }
+  .fondomain {
+    height: 100vh;
+  }
+}
+/* fin de estilos segun el tamaño */
+
+/*# sourceMappingURL=style.css.map */

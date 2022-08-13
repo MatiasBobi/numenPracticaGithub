@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Dan-Mar</title>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <!-- Inicio del menu de navegación -->
+        <nav class="navbar navbar-expand-md navbar__index navbar-dark">
+            <div class="container-fluid">
+                <!-- Menu responsive -->
+                <a class="navbar-brand" href="#">
+                    <span class="logoHeader">Prueba</span>
+                </a>
+                <!-- Boton desplegable responsive -->
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Items del menu colapsable -->
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navegación</h5>
+                        <button type="button" class="btn-close btn-close-white vamoaproba" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                            <li class="nav-item hover-underline-animation">
+                                <a class="nav-link homebutton" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown hover-underline-animation">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu productos__submenu">
+                                    <li><a class="dropdown-item" href="#">Copas</a></li>
+                                    <li><a class="dropdown-item" href="#">Manteleria</a></li>
+                                    <li><a class="dropdown-item" href="#">Sillas</a></li>
+                                    <li><a class="dropdown-item" href="#">Tablones y mesas</a></li>
+                                    <li><a class="dropdown-item" href="#">Hornos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item hover-underline-animation">
+                                <a class="nav-link" href="#">¿Quienes somos?</a>
+                            </li>
+                            <li class="nav-item hover-underline-animation">
+                                <a class="nav-link" href="#">Ayuda</a>
+                            </li>
+                            <li class="nav-item hover-underline-animation">
+                                <a class="nav-link" href="#">Iniciar sesión</a>
+                            </li>
+                            <li class="nav-item hover-underline-animation">
+                                <a class="nav-link" href="#">Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Fin menu responsive -->
+
+
+
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+
+        <section class="inicio__index">
+            <div class="fondomain">
+
+                <ul class="d-flex flex-wrap flex-column justify-content-center align-items-center presentacion ">
+                    <li>
+                        <h1 class="tracking-in-contract ">Prueba</h1>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque. Laborum repellat
+                            earum consectetur quidem numquam, ex id nesciunt eveniet excepturi quibusdam similique quis,
+                            sunt aspernatur ad molestias? Libero, enim!</p>
+                    </li>
+                    <li class="button_verproductos"> <span class="underline__irA"><a class="verproductos__index "
+                                href="#">
+                                <span class="texto__verproductos">Ver productos </span><i
+                                    class="bi bi-arrow-right-circle-fill icono__verproductos"></i></span></a></li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- Informacion breve del negocio -->
+
+        <section class="descripcion__empresa">
+
+            <div class="container__descripcion__empresa">
+                <div class="parrafo__descripcion">
+                    <img src="./media/vajilla__descripcion__empresa.png" class="imagen__desc_emp"
+                        alt="plato con cubiertos">
+                    <p class="tracking-in-expand">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ab voluptate mollitia amet
+                        possimus dignissimos, doloribus sed, vel placeat eum dolorum, odit eligendi incidunt hic
+                        exercitationem eos deserunt dolor quos.
+                    </p>
+                </div>
+                <div class="video__descrpcion__empresa">
+                    <iframe width="560" height="100%" src="https://www.youtube.com/embed/-OBPWLWfHRY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="tipoProductos">
+            <div class="container_tipoProductos">
+                <div class="tipo__productos">
+                    <div class="tipoProductos__item  tipo-copas">
+                        <img src="./media/copa-de-vino.png" alt="" class="imagenTipoProductos">
+                        <p class="descripcionTipoProductos">Copas de cristal</p>
+                    </div>
+                    <div class="tipoProductos__item  tipo-manteleria">
+                        <img src="./media/manteles.png" alt="" class="imagenTipoProductos">
+                        <p class="descripcionTipoProductos">Manteles de tela</p>
+                    </div>
+                    <div class="tipoProductos__item  tipo-sillas">
+                        <img src="./media/silla-del-comedor.png" alt="" class="imagenTipoProductos">
+                        <p class="descripcionTipoProductos">Sillas de plastico o de salon</p>
+                    </div>
+                    <div class="tipoProductos__item  tipo-mesas">
+                        <img src="./media/mesa-redonda.png" alt="" class="imagenTipoProductos">
+                        <p class="descripcionTipoProductos">Mesas redondas o tablones</p>
+                    </div>
+                    <div class="tipoProductos__item  tipo-cocina">
+                        <img src="./media/horno.png" alt="" class="imagenTipoProductos">
+                        <p class="descripcionTipoProductos">Hornos, anafes, etc.</p>
+                    </div>
+                    <div class="tipoProductos__item  tipo-electrodomesticos">
+                        <img src="./media/refrigerador.png" alt="" class="imagenTipoProductos">
+                        <p class="descripcionTipoProductos">Heladeras, freezers, etc.</p>
+                    </div>
+                </div>
+                <div class="metodo__envio">
+                    <p>empaquetado</p>
+                    <p>viaje</p>
+                    <p>entrega</p>
+                </div>
+
+                <div class="metodosDePago">
+                    <div class="container__metodosDePago">
+                        <h3 class="titulo__metodosPago">Metodos de pago</h3>
+                        <div class="imagenes_metodoPago">
+                            <img src="./media/visa.png" alt="" class="imagen__metodosDePago">
+                            <img src="./media/mastercard.png" alt="" class="imagen__metodosDePago">
+                            <img src="./media/naranja.png" alt="" class="imagen__metodosDePago iconoImagen">
+                            <img src="./media/pago-facil-icon.png" alt="" class="imagen__metodosDePago iconoImagen">
+                            <img src="./media/rapipago-logo.png" alt="" class="imagen__metodosDePago iconoImagen">
+                            <img src="./media/billetes.png" alt="" class="imagen__metodosDePago">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="info__footer">
+
+            <div class="container__footer">
+                <div class="logoEmpresa__footer">
+                    <img src="" alt="">
+                </div>
+
+                <div class="informacionFooter__cliente">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="llamanos__footer">
+
+                </div>
+
+                <div class="redes__footer">
+
+                </div>
+
+            </div>
+        </section>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
